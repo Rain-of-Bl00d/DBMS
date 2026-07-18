@@ -1,0 +1,39 @@
+insert into A22_PYAAREZZ values(3, 'Abhi','RANDOM', 'EDDIE');
+----
+INSERT INTO A22_PYAAREZZ (ID, NAME) values (4, 'RIO');
+
+---
+INSERT INTO A22_PYAAREZZ (ID, NAME, NICKIEEE) values ('&ID', '&NAME', '&NICKIEEE');
+
+--------------------------------
+
+ALTER TABLE A22_PYAAREZZ
+MODIFY ID NOT NULL;
+
+-------------
+commit;
+savepoint A;
+
+----
+UPDATE A22_PYAAREZZ
+SET NICKIEEE='DIYA'
+WHERE NAME = 'DIYAAAA';
+
+---
+delete FROM A22_PYAAREZZ
+WHERE NAME = 'RIO';
+
+---
+
+update A22_PYAAREZZ
+SET NAME = 'DIYA', NICKIEEE = NULL
+WHERE ID = 100;
+
+---
+update A22_PYAAREZZ
+set name ='deeeee'
+where nickieee is null;
+------------
+select * from A22_PYAAREZZ;
+
+----------
